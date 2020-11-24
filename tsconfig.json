@@ -3,13 +3,27 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@services/*": [
+        "app/services/*"
+      ],
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@common/*": [
+        "app/common/*"
+      ],
+      "@config/*": [
+        "app/config/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",

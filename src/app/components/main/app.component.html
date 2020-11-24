@@ -1,0 +1,4 @@
+<app-searcher (searchEmitter)="handleSearch($event)"></app-searcher>
+<ul>
+  <li *ngFor="let user of users | async | search:(valueFilter | async) ">{{user?.name}}</li>
+</ul>
